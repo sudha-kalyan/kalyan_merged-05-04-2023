@@ -21,6 +21,7 @@ public class appentryController {
 
     @GetMapping("/register")
     public String registerHtml() {
+
         return "register";
     }
 

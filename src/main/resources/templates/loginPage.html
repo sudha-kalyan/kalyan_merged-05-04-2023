@@ -100,7 +100,9 @@ button {
                 <div class="row">
                     <div class="col-md-10 col-lg-20 col-xl-5 offset-xl-4">
                         <div v-if="!registerActive" class="card login" v-bind:class="{ error: emptyFields }">
-                            <center> <h2> <b>Login</b></h2> </center>
+                            <center> <h2> <font color="#000080 ">
+                                <b>Login Page</b>
+                            </font></h2> </center>
                             <center><p><font color="green">
                                 <b> Please Login Hear..!!!</b>
                             </font></p></center>
@@ -112,7 +114,7 @@ button {
                                 <input type="text" class="form-control" name="mobile" id="phone" placeholder="phone" maxlength="10" pattern="\d{10}" required title="Enter Phone Number" autocomplete="off">
 
                                 <label for="inputPassword4">Password</label>
-                                <input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password">
+                                <input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password" required title="Enter Password">
 
                                 <br>
                                 <button type="submit"id="submit" class="btn btn-primary btn-block mb-3"><b>Sign in</b></button>
@@ -135,7 +137,7 @@ button {
 
 
 
-<!--<div th:replace="fragments/navbar :: navbar_footer"></div>-->
+<div th:replace="fragments/navbar :: navbar_footer"></div>
 
 
 

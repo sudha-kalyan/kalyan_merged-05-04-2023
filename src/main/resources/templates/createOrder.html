@@ -47,6 +47,51 @@
    background-color: blue;
    text-align: center;
 }
+ #product{
+  width:300px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+
+  }
+  #customer{
+  width:300px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+  text-align: center;
+  }
+  #qty{
+  width:300px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+  text-align: center;
+  }
+  #datePicker{
+  width:300px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+  text-align: center;
+  }
+  #disc{
+  width:300px;
+  border:1px solid blue;
+  border-radius:2px
+  outline:0;
+  padding:3px;
+  background-colour:#fff;
+  text-align: center;
+  }
     </style>
 </head>
 <body style="background-color: #fff;">
@@ -56,7 +101,10 @@
     <div th:replace="fragments/message :: message_html"></div>
 </div>
 <div class="container">
-    <h1>Create Order</h1>
+    <br>
+    <h3><font color="#000080 ">
+        <b>Create Order</b>
+    </font></h3>
     <hr>
     <div class="row auto-align">
         <div class="col">
@@ -76,7 +124,7 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-6">
+        <div class="col-4">
             <label for="product">Product</label>
             <select id="product" class="form-control" name="product" autocomplete="on">
 
